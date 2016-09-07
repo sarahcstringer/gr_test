@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>{{course.course_title}}</h1>
+<h3>Instructor: {{instructor.first_name}} {{instructor.last_name}}</h3>
+<p><b>Start:</b> {{ course.start_date|strftime }}</p>
+<p><b>End:</b> {{ course.end_date|strftime }}</p>
+<p>{{course.course_description}}</p>
+
+{% endblock %}

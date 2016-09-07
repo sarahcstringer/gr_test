@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<style>
+
+    body {
+    background: #333 url("/static/leafwood.jpg");
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+    }
+
+      div.transbox {
+   background: rgba(255, 255, 255, 0.2); 
+   border-radius: 25px;
+}
+
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:300|Raleway:300|Roboto:100" rel="stylesheet">
+
+<div class="site-wrapper" id='loginStuff'>
+    <div class='col-md-12'>
+    <div class="site-wrapper-inner col-md-4">
+<h1 style="text-shadow: 2px 2px 0px #000; font-family: 'Fjalla One', sans-serif; color:#990000; font-size:350%" align="left" >
+Pale sunlight. <br>Pale the wall.<br>
+Love moves away. <br>The light changes.<br>
+I need more grace <br>than I thought.
+</h1>
+<h1 class='animated' id='blah' style="text-shadow: 2px 2px 0px #000; font-family: 'Lato', sans-serif; color:#990000; font-size:350%" align="left"><a href='/view_stuff'>>> Enter</a></h1>
+
+<script>
+$('#blah').on('mouseenter', function() {
+    $('#blah').addClass('pulse');
+});
+$('#blah').on('mouseleave', function() {
+    $('#blah').removeClass('pulse')
+})
+
+
+
+</script>
+
+</div>
+<div class='col-md-12'>
+<!-- <div class='col-md-8'> -->
+<!-- <p style="font-family: 'Lato', sans-serif;" class='lead' align="left">The quick brown fox jumped over the lazy dog and I'm just going to<br> stream of consciousness this because I want to see how everything looks.</p> -->
+        <!-- </div> -->
+        </div>
+        </div>
+    </div>
+    <br>
+    <div>
+
+</div>
+</div>
+
+
+<!-- {{ session['user_fname'] }} -->
+
+
+
+{% endblock %}
